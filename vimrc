@@ -64,3 +64,6 @@ nmap <C-Down> ]e
 vmap <C-Up> [egv
 vmap <C-Down> ]egv
 
+"from http://vimcasts.org/episodes/undo-branching-and-gundo-vim/ and
+"http://sjl.bitbucket.org/gundo.vim/#installation
+nnoremap <F5> :GundoToggle<CR>

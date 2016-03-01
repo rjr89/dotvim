@@ -41,9 +41,8 @@ set foldnestmax=10
 "set foldmethod=indent
 set foldmethod=syntax
 
-
+"YCM bindings
 let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
-
 let g:ycm_key_list_select_completion=[]
 let g:ycm_key_list_previous_completion=[]
 

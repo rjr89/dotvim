@@ -38,8 +38,8 @@ nnoremap <leader><space> :nohlsearch<CR>
 set foldenable
 set foldlevelstart=10
 set foldnestmax=10
-nnoremap <space> za
-set foldmethod=indent
+"set foldmethod=indent
+set foldmethod=syntax
 
 
 let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
@@ -68,4 +68,3 @@ vmap <C-Down> ]egv
 "http://sjl.bitbucket.org/gundo.vim/#installation
 nnoremap <F5> :GundoToggle<CR>
 
-set foldmethod=syntax

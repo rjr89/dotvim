@@ -20,3 +20,6 @@ Switch to the `~/.vim` directory, and fetch submodules:
 	cd ~/.vim/bundle/YouCompleteMe
 	./install.py --clang-completer
 
+
+Requirements:
+	-) vimtex needs the package "latexmk" for compilation

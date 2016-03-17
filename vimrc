@@ -5,7 +5,7 @@ filetype plugin indent on
 
 "Source the vimrc file after saving it
 if has("autocmd")
-	  autocmd bufwritepost .vimrc source $MYVIMRC
+	autocmd bufwritepost .vimrc source $MYVIMRC
 endif
 
 "from the solarized plugin
@@ -43,8 +43,24 @@ set foldmethod=syntax
 
 "YCM bindings
 let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
-let g:ycm_key_list_select_completion=[]
-let g:ycm_key_list_previous_completion=[]
+
+"" better key bindings for UltiSnipsExpandTrigger
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+
+let g:UltiSnipsEditSplit = 'vertical'
+
+let g:UltiSnipsExpandTrigger = "<nop>"
+let g:ulti_expand_or_jump_res = 0
+function ExpandSnippetOrCarriageReturn()
+	let snippet = UltiSnips#ExpandSnippetOrJump()
+	if g:ulti_expand_or_jump_res > 0
+		return snippet
+	else
+		return "\<CR>"
+	endif
+endfunction
+inoremap <expr> <CR> pumvisible() ? "<C-R>=ExpandSnippetOrCarriageReturn()<CR>" : "\<CR>"
 
 "from fugitive http://vimcasts.org/episodes/fugitive-vim-browsing-the-git-object-database/
 autocmd User fugitive if fugitive#buffer().type() =~# '^\%(tree\|blob\)$' | nnoremap <buffer> .. :edit %:h<CR> | endif
@@ -67,3 +83,6 @@ vmap <C-Down> ]egv
 "http://sjl.bitbucket.org/gundo.vim/#installation
 nnoremap <F5> :GundoToggle<CR>
 
+
+"for vimtex
+let maplocalleader = ","

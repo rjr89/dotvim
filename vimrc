@@ -41,8 +41,13 @@ set foldnestmax=10
 "set foldmethod=indent
 set foldmethod=syntax
 
-"YCM bindings
-let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
+""YCM bindings
+"let g:ycm_filetype_whitelist = {
+"      \ 'cpp' : 1,
+"      \ 'sh' : 1,
+"      \ 'python' : 1
+"      \}
+"let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
 
 "" better key bindings for UltiSnipsExpandTrigger
 let g:UltiSnipsJumpForwardTrigger = "<tab>"

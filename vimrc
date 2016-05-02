@@ -91,3 +91,6 @@ nnoremap <F5> :GundoToggle<CR>
 
 "for vimtex
 let maplocalleader = ","
+
+"for Nvim-R
+let r_syntax_folding = 1 

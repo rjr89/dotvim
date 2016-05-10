@@ -41,6 +41,7 @@ set foldnestmax=10
 "set foldmethod=indent
 set foldmethod=syntax
 
+set modifiable
 ""YCM bindings
 "let g:ycm_filetype_whitelist = {
 "      \ 'cpp' : 1,
@@ -94,3 +95,4 @@ let maplocalleader = ","
 
 "for Nvim-R
 let r_syntax_folding = 1 
+let R_assign_map = 0

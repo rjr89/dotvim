@@ -96,7 +96,8 @@ let maplocalleader = ","
 
 "for Nvim-R
 let r_syntax_folding = 1 
-let R_assign_map = 0
+let R_assign = 0
+
 
 " Make Ctrl-e jump to the end of the current line in the insert mode. This is
 " handy when you are in the middle of a line and would like to go to its end

@@ -37,3 +37,6 @@
 [submodule "bundle/Nvim-R"]
 	path = bundle/Nvim-R
 	url = https://github.com/jalvesaq/Nvim-R
+[submodule "bundle/tabular"]
+	path = bundle/tabular
+	url = https://github.com/godlygeek/tabular

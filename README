@@ -10,13 +10,9 @@ Create symlinks:
 Switch to the `~/.vim` directory, and fetch submodules:
 
 	cd ~/.vim
-
-1) This works without YCM
-	git submodule init
-	git submodule update
-
-2) Here variant that should work with YouCompleteMe (not tested yet, and it works for Ubuntu, see YCM git repository):
 	git submodule update --init --recursive
+
+Additional for YouCompleteMe to work:
 	cd ~/.vim/bundle/YouCompleteMe
 	./install.py --clang-completer
 

@@ -1,1 +1,0 @@
-# Antimony-vim-syntax-highlighting

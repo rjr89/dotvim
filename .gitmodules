@@ -18,7 +18,8 @@
 	url = https://github.com/valloric/YouCompleteMe.git
 [submodule "bundle/gundo"]
 	path = bundle/gundo
-	url = http://github.com/sjl/gundo.vim.git [submodule "bundle/vim-visual-star-search"]
+	url = http://github.com/sjl/gundo.vim.git
+[submodule "bundle/vim-visual-star-search"]
 	path = bundle/vim-visual-star-search
 	url = https://github.com/nelstrom/vim-visual-star-search
 [submodule "bundle/vim-abolish"]

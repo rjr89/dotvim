@@ -37,3 +37,6 @@
 [submodule "bundle/tabular"]
 	path = bundle/tabular
 	url = https://github.com/godlygeek/tabular
+[submodule "bundle/antimony"]
+	path = bundle/antimony
+	url = https://github.com/rjr89/Antimony-vim-syntax-highlighting

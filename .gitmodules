@@ -18,8 +18,7 @@
 	url = https://github.com/valloric/YouCompleteMe.git
 [submodule "bundle/gundo"]
 	path = bundle/gundo
-	url = http://github.com/sjl/gundo.vim.git
-[submodule "bundle/vim-visual-star-search"]
+	url = http://github.com/sjl/gundo.vim.git [submodule "bundle/vim-visual-star-search"]
 	path = bundle/vim-visual-star-search
 	url = https://github.com/nelstrom/vim-visual-star-search
 [submodule "bundle/vim-abolish"]
@@ -40,6 +39,6 @@
 [submodule "bundle/tabular"]
 	path = bundle/tabular
 	url = https://github.com/godlygeek/tabular
-[submodule "Antimony-vim-syntax-highlighting"]
+[submodule "bundle/antimony"]
 	path = bundle/antimony
 	url = https://github.com/rjr89/Antimony-vim-syntax-highlighting.git

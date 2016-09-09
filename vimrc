@@ -105,3 +105,4 @@ let R_assign = 0
 " without switching to the normal mode.
 inoremap <C-e> <C-o>$
 
+let g:vimwiki_folding='expr'

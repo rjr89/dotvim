@@ -1,5 +1,6 @@
 "from the pathogen plugin
 execute pathogen#infect()
+set nocompatible
 syntax on
 filetype plugin indent on
 
@@ -77,7 +78,7 @@ set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 "show invisible characters:
 set list
 nmap <leader>l :set list!<CR>
-set listchars=tab:▸\ ,eol:¬
+set listchars=tab:▸\ ,eol:¬,space:·
 
 " Bubble single lines
 nmap <C-Up> [e

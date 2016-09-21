@@ -106,3 +106,10 @@ let R_assign = 0
 inoremap <C-e> <C-o>$
 
 let g:vimwiki_folding='expr'
+
+
+" Toggle spell checking on and off with `,s`
+nmap <silent> <leader>s :set spell!<CR>
+
+" Set region to American English
+set spelllang=en_us

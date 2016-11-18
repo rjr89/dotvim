@@ -113,3 +113,5 @@ nmap <silent> <leader>s :set spell!<CR>
 
 " Set region to American English
 set spelllang=en_us
+
+nnoremap <leader>b :ls<cr>:b<space>

@@ -108,3 +108,6 @@ nmap <silent> <leader>s :set spell!<CR>
 set spelllang=en_us
 
 nnoremap <leader>b :ls<cr>:b<space>
+set diffopt+=vertical
+
+command Paper %substitute/[ \n]/-/g

@@ -98,7 +98,8 @@ let R_assign = 0
 " without switching to the normal mode.
 inoremap <C-e> <C-o>$
 
-let g:vimwiki_folding='expr'
+" let g:vimwiki_folding='expr'
+let g:vimwiki_folding='list'
 
 
 " Toggle spell checking on and off with `,s`

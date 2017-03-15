@@ -112,3 +112,36 @@ nnoremap <leader>b :ls<cr>:b<space>
 set diffopt+=vertical
 
 command Paper %substitute/[ \n]/-/g
+
+
+highlight ColorColumn ctermbg=magenta
+call matchadd('ColorColumn', '\%81v', 100)
+
+
+nnoremap <silent> n   n:call HLNext(0.4)<cr>
+nnoremap <silent> N   N:call HLNext(0.4)<cr>
+
+function! HLNext (blinktime)
+    highlight BlackOnBlack ctermfg=black ctermbg=black
+    let [bufnum, lnum, col, off] = getpos('.')
+    let matchlen = strlen(matchstr(strpart(getline('.'),col-1),@/))
+    let hide_pat = '\%<'.lnum.'l.'
+            \ . '\|'
+            \ . '\%'.lnum.'l\%<'.col.'v.'
+            \ . '\|'
+            \ . '\%'.lnum.'l\%>'.(col+matchlen-1).'v.'
+            \ . '\|'
+            \ . '\%>'.lnum.'l.'
+    let ring = matchadd('BlackOnBlack', hide_pat, 101)
+    redraw
+    exec 'sleep ' . float2nr(a:blinktime * 1000) . 'm'
+    call matchdelete(ring)
+    redraw
+endfunction
+
+runtime plugin/dragvisuals.vim
+vmap  <expr>  <LEFT>   DVB_Drag('left')
+vmap  <expr>  <RIGHT>  DVB_Drag('right')
+vmap  <expr>  <DOWN>   DVB_Drag('down')
+vmap  <expr>  <UP>     DVB_Drag('up')
+vmap  <expr>  D        DVB_Duplicate()

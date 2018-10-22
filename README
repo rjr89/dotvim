@@ -14,7 +14,7 @@ Switch to the `~/.vim` directory, and fetch submodules:
 
 Additional for YouCompleteMe to work:
 	cd ~/.vim/bundle/YouCompleteMe
-	./install.py --clang-completer
+	python3 install.py --clang-completer
 
 
 Requirements:

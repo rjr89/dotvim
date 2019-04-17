@@ -1,8 +1,8 @@
 "from the pathogen plugin
 execute pathogen#infect()
 set nocompatible
-syntax on
 filetype plugin indent on
+syntax on
 
 "Source the vimrc file after saving it
 if has("autocmd")
